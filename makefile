@@ -5,7 +5,7 @@ CFLAGS = -c $(DEBUG)
 LFLAGS = $(DEBUG)
 
 assign4 : $(OBJS)
-	$(CC) $(LFLAGS) $(OBJS) -o hw4
+	$(CC) $(LFLAGS) $(OBJS) -o program
 	
 Source.o : Source.cpp
 	$(CC) $(CFLAGS) Source.cpp
@@ -26,4 +26,4 @@ AlphaData.o : AlphaData.h AlphaData.cpp
 	$(CC) $(CFLAGS) AlphaData.cpp
 
 clean:
-	\rm *.o hw4
+	\rm *.o program
